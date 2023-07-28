@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- fonts -->
+
+  <!-- CSS iCON Google -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/buttons.css">
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/media.css">
+  <link rel="stylesheet" href="./src/styles/footer.css">
+  <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/modal.css">
+
+  <!-- JS -->
+  <script type="module" src="./src/scripts/index.js"></script>
+
+  <!-- Bibliotecas  -->
+  <script src="https://kit.fontawesome.com/f016d9ee36.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <title>S8-01 🏆 Projeto em Equipe</title>
+
+</head>
+
+
+<body>
+  <main>
+
+    <section>
+
+      <div id="logo__container" class="logo__container back-purple100">
+        <h1 class="title-logo white100">KenziePets</h1>
+        <h3 class="white100">Faça a alegria de um pet...</h3>
+      </div>
+
+
+      <div class="form__container">
+        <h1 class="title-1 purple100">LOGIN</h1>
+        <form id="login-form" name="login">
+          <!-- <label for="email">Email</label> -->
+          <input type="email" name="email" placeholder="Digite Seu email" required="true" id="email">
+          <!-- <label for="password">Senha</label> -->
+          <input type="password" name="password" placeholder="Digite Sua senha" required="true" id="password">
+        </form>
+        <button id="loginPage" class="btn btnLogin btnPuple back-purple100 white100">Login</button>
+        <p id="desc-form" class="">Não tem cadastro? <span id="cadastroIndex">Clique aqui</span> para se cadastrar</p>
+      </div>
+
+    </section>
+
+    <dialog class="modalLogin" id="modalLogin"></dialog>
+    <dialog id="modalCadastro"></dialog>
+  </main>
+
+
+
+
+  <footer id="footer" class="color-2"></footer>
+</body>
+
+</html>

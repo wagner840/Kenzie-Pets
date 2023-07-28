@@ -1,0 +1,416 @@
+/* Modal de Login */
+
+.modal__container--login {
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  border-radius: 50px;
+}
+
+.modal__header {
+  background-color: var(--color-purple100);
+  border: 1px solid var(--color-purple100);
+  width: 100%;
+  height: 30px;
+  position: relative;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.modal__X--login,
+.modal__X--register,
+.modal__X--cadastrarPet,
+.modal__X--editPerfil,
+.modal__X--AtualizarPerfil,
+.modal__X--AtualizarPet,
+.modal__X--DeletarConta {
+  position: absolute;
+  top: 0.5rem;
+  margin: -3px;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 100%;
+  color: white;
+}
+
+.modal__container--login > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}
+
+.modal__container--login > form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__container--login > form > input {
+  width: 50%;
+
+  align-self: center;
+
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+}
+
+.modal__container--login > form > input::placeholder {
+  color: var(--color-purple200);
+}
+
+.modal__container--login > form > input:hover,
+.modal__container--login > form > input:focus {
+  border: 1px solid var(--color-purple100);
+}
+
+.modal__container--login > form > button {
+  width: 50%;
+  /* Ajustar esse width... */
+
+  align-self: center;
+
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  background-color: var(--color-purple100);
+  color: #fff;
+
+  padding: 0.5rem 1rem;
+}
+
+/* Modal de Register */
+/* 
+.modal__container--register {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 50px;
+}
+
+.modal__container--register > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}
+
+.modal__container--register > form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__container--register > form > input {
+  width: 50%;
+
+  align-self: center;
+
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+}
+
+.modal__container--register > form > input::placeholder {
+  color: var(--color-purple200);
+}
+
+.modal__container--register > form > input:hover,
+.modal__container--register > form > input:focus {
+  border: 1px solid var(--color-purple100);
+}
+
+.modal__container--register > form > button {
+  width: 50%;
+  /* Ajustar esse width... */
+
+  /* align-self: center;
+
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  background-color: var(--color-purple100);
+  color: #fff;
+
+  padding: 0.5rem 1rem;
+}
+
+.spanToClick {
+  color: var(--color-purple100);
+
+  font-weight: bold;
+
+  cursor: pointer;
+} */
+
+/* Modal Cadastrar Pet */
+#wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+#modalCadastrarPet {
+  border: 0;
+  border-radius: 30px;
+  padding: 0;
+}
+
+.modal__container--cadastroPet {
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+
+  border-radius: 50px;
+}
+.modal__container--cadastroPet > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}
+.modal__container--cadastroPet > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__container--cadastroPet > form > select {
+  width: 50%;
+
+  align-self: center;
+
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+}
+.modal__container--cadastroPet > form > input {
+  width: 50%;
+
+  align-self: center;
+
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+}
+
+.modal__container--cadastroPet > form > input::placeholder {
+  color: var(--color-purple200);
+}
+
+.modal__container--cadastroPet > form > input:hover,
+.modal__container--cadastroPet > form > input:focus {
+  border: 1px solid var(--color-purple100);
+}
+
+.modal__container--cadastroPet > form > button {
+  width: 50%;
+
+  align-self: center;
+
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  background-color: var(--color-purple100);
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 0.5rem 1rem;
+}
+.abrir {
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+
+  z-index: 2;
+}
+.abrirEditPerfil {
+  margin: 0 auto;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+.modalCadastroPet {
+  display: none;
+}
+
+.teste {
+  width: 100px;
+  height: 30px;
+}
+
+/* Modal Edit Perfil */
+#wrapper-editPerfil {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.modal__container--editPerfil {
+  margin-top: 300px;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 35px;
+}
+.modal__container--editPerfil > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}
+.modal__container--editPerfil > form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__container--editPerfil > form > input {
+  width: 50%;
+
+  align-self: center;
+
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  padding: 0.5rem 1rem;
+}
+
+.modal__container--editPerfil > form > input::placeholder {
+  color: var(--color-purple200);
+}
+
+.modal__container--editPerfil > form > input:hover,
+.modal__container--editPerfil > form > input:focus {
+  width: 50%;
+  /* Ajustar esse width... */
+
+  align-self: center;
+
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+
+  background-color: var(--color-purple100);
+  color: #fff;
+
+  padding: 0.5rem 1rem;
+}
+
+/* Modal Atualizar Pet */
+
+.modal__container--AtualizarPet {
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 50px;
+  gap: 20px;
+}
+.modal__container--AtualizarPet > form {
+  padding: 0px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 67%;
+  width: 100%;
+}
+.modal__container--AtualizarPet > form > input {
+  margin: 10px;
+}
+.modal__container--AtualizarPet > form > input,
+.modal__container--AtualizarPet > form > select {
+  width: 90%;
+  align-self: center;
+  outline: none;
+  border: 1px solid var(--color-purple200);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.modal__container--AtualizarPet > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}
+
+/* Modal Delete */
+#modalDeletarConta {
+  width: 50%;
+  border: 0;
+  border-radius: 30px;
+  padding: 0;
+}
+
+.modal__container--DeletarConta {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 35px;
+}
+
+.modal__container--DeletarConta > h2 {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: var(--color-purple100);
+}

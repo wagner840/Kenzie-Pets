@@ -1,0 +1,173 @@
+#perfilCard {
+  height: 200px;
+  width: 100%;
+  background-color: var(--color-purple100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#perfilSection {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#perfilInfo {
+  margin-top: 10px;
+  color: var(--color-purple100);
+}
+#perfilInfo > h2 {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#perfilInfo > p {
+  margin-bottom: 5px;
+}
+#perfilImg {
+  border-radius: 100%;
+  border: solid 3px white;
+  width: 200px;
+  height: 170px;
+}
+#btnDiv {
+  padding-top: 10px;
+}
+#btnConfirmDelete,
+#btnToPerfil {
+  width: 60%;
+  align-self: center;
+}
+#btnAtualizarPerfil,
+#btnConfirmUpdatePet,
+#btnConfirmDelete,
+#btnToPerfil,
+#confirmEditPerfil {
+  color: white;
+  background-color: var(--color-purple100);
+  padding: 6px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+#confirmEditPerfil {
+  align-self: center;
+  width: 50%;
+}
+#btnAtualizarPerfil {
+  color: white;
+  background-color: var(--color-purple100);
+  padding: 6px;
+  border-radius: 15px;
+}
+#btnDeletePerfil {
+  color: var(--color-red100);
+  border: solid 1px;
+  padding: 6px;
+  border-radius: 15px;
+}
+#NoPet {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--color-purple100);
+  font-weight: 900;
+  font-size: x-large;
+  margin: 25px;
+    text-align: center;
+}
+#myPets {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+}
+
+#myPets > div {
+  width: 400px;
+  max-width: 400px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(78, 32, 150, 0.25);
+}
+#petInfo > p {
+  margin-top: 5px;
+
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-purple100);
+  margin-top: 5px;
+
+  width: 165px;
+}
+
+#divPetImg {
+  width: 50%;
+  display: flex;
+}
+#petImg {
+  width: 90%;
+  max-height: 140px;
+  height: 130px;
+}
+#btnAtualizarPet {
+  color: white;
+  background-color: var(--color-purple100);
+  padding: 6px;
+  margin-top: 6px;
+  border-radius: 15px;
+}
+#makeNewPet {
+  color: white;
+  background-color: var(--color-green100);
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 300px;
+  margin-left: 5px;
+}
+
+@media (min-width: 1023px) {
+  #myPets {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+/*Modais*/
+
+#modalAtualizarPet {
+  padding: 0px;
+  border: transparent;
+  border-radius: 30px;
+}
+.modal__container--AtualizarPet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Modais*/
+
+#modalAtualizarPet {
+  padding: 0px;
+  border: transparent;
+  border-radius: 30px;
+}
+.modal__container--AtualizarPet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
